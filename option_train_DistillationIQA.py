@@ -44,7 +44,6 @@ def set_args():
     
     #Ref Img
     parser.add_argument('--use_refHQ', type=str2bool, default=True)
-    parser.add_argument('--ref_hdfs_folder_paths', type=str, default='hdfs://haruna/home/byte_arnold_lq_vc/user/yinguanghao/data/DIV2K_ref.tar.gz')
     parser.add_argument('--distillation_layer', type=int, default=18, help='last xth layers of HQ-MLP for distillation')
 
     parser.add_argument('--net_print', type=int, default=2000)

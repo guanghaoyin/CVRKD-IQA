@@ -19,6 +19,7 @@ Place those unzipped data in ./dataset file
 ### 1.Train the FR-teacher
 (1) (optional) Download models for our paper and place it in './model_zoo/'
    The models for FR-teacher can be downloaded from [Google Cloud]()
+   
 (2) Quick start (you can change the options in option_train_DistillationIQA_FR.py)
 ```
 Python train_DistillationIQA_FR.py --self_patch_num 10 --patch_size 224
@@ -26,6 +27,26 @@ Python train_DistillationIQA_FR.py --self_patch_num 10 --patch_size 224
 ### 2.Fix pretrained FR-teacher and train the NAR-student
 (1) (optional) Download models for our paper and place it in './model_zoo/'
    The models for FR-teacher can be downloaded from [Google Cloud]()
+   
 (2) Quick start (you can change the options in option_train_DistillationIQA.py)
 ```
 Python train_DistillationIQA.py --self_patch_num 10 --patch_size 224
+```
+
+## Test
+(1) Make sure the trained models are placed in './model_zoo/FR_teacher_cross_dataset.pth' and './model_zoo/NAR_student_cross_dataset.pth' 
+
+(2) Quick start (you can change the options in option_train_DistillationIQA.py)
+```
+Python test_DistillationIQA.py
+```
+(3) test single image
+```
+Python test_DistillationIQA_single.py
+```
+## More visual results
+Synthetic examples of IQA scores predicted by our NAR-student when gradually increasing the distortion levels.
+<div align=center><img src="https://github.com/guanghaoyin/CVRKD-IQA/blob/main/imgs/synthetic_example.png" alt="Distillation" align="middle" /></div>
+
+Real-data examples of IQA scores predicted by our NAR-student.
+<div align=center><img src="https://github.com/guanghaoyin/CVRKD-IQA/blob/main/imgs/real_example.png" alt="Distillation" align="middle" /></div>

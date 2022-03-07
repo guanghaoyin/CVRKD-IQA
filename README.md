@@ -7,8 +7,25 @@ CVRKD-IQA is the first content-variant reference IQA method via knowledge distil
 
 <div align=center><img src="https://github.com/guanghaoyin/CVRKD-IQA/blob/main/imgs/distillationIQA.png" alt="Distillation" align="middle" /></div>
 
-## Train
-### Prepare training data
-Download synthetic [Kaddid-10K](http://database.mmsp-kn.de/kadid-10k-database.html) dataset.
-Put the unzipped data in ./dataset file
+## Prepare data
+### Training datasets
+Download synthetic [Kaddid-10K](http://database.mmsp-kn.de/kadid-10k-database.html) dataset. And download the training HQ images of [DIV2K](https://data.vision.ee.ethz.ch/cvl/DIV2K/) as the reference dataset.
 
+### Testing datasets
+Download synthetic [LIVE](http://live.ece.utexas.edu/index.php), [CSIQ](https://qualinet.github.io/databases/image/categorical_image_quality_csiq_database/) [TID2013](http://www.ponomarenko.info/tid2013.htm) and authentic [KonIQ-10K](http://database.mmsp-kn.de/koniq-10k-database.html) datasets. And download the testing HQ images of [DIV2K](https://data.vision.ee.ethz.ch/cvl/DIV2K/) as the reference dataset.
+
+Place those unzipped data in ./dataset file
+## Train
+### 1.Train the FR-teacher
+(1) (optional) Download models for our paper and place it in './model_zoo/'
+   The models for FR-teacher can be downloaded from [Google Cloud]()
+(2) Quick start (you can change the options in option_train_DistillationIQA_FR.py)
+```
+Python train_DistillationIQA_FR.py --self_patch_num 10 --patch_size 224
+```
+### 2.Fix pretrained FR-teacher and train the NAR-student
+(1) (optional) Download models for our paper and place it in './model_zoo/'
+   The models for FR-teacher can be downloaded from [Google Cloud]()
+(2) Quick start (you can change the options in option_train_DistillationIQA.py)
+```
+Python train_DistillationIQA.py --self_patch_num 10 --patch_size 224

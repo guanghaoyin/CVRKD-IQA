@@ -1,5 +1,6 @@
 # CVRKD-IQA(DistillationIQA)
 This repository is for CVRKD-IQA introduced in the following paper
+
 Guanghao Yin, Wei Wang, Zehuan Yuan, Chuchu Han, Wei Ji, Shouqian Sun and Changhu Wang "Content-Variant Reference Image Quality Assessment via Knowledge Distillation", AAAI, 2022 [arxiv](https://arxiv.org/abs/2202.13123)
 
 ## Introduction

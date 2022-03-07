@@ -50,3 +50,24 @@ Synthetic examples of IQA scores predicted by our NAR-student when gradually inc
 
 Real-data examples of IQA scores predicted by our NAR-student.
 <div align=center><img src="https://github.com/guanghaoyin/CVRKD-IQA/blob/main/imgs/real_example.png" alt="Distillation" align="middle" /></div>
+
+## T-SNE visual visualization of HQ-LQ difference-aware features of NAR-student w/ and w/o KD
+After distilled with FR-teacher, the HQ-LQ features in Fig(b) are clusterd. It proves that the HQ-LQ distribution difference prior from the FR-teacher can indeed
+help the NAR-student extract quality-sensitive discriminative features for more accurate and consistent performance.
+
+<div align=center><img src="https://github.com/guanghaoyin/CVRKD-IQA/blob/main/imgs/KD.png" alt="Distillation" align="middle" /></div>
+
+## Citation
+
+If you find the code helpful in your resarch or work, please cite the following papers.
+
+```
+@article{yin2022content,
+  title={Content-Variant Reference Image Quality Assessment via Knowledge Distillation},
+  author={Yin, Guanghao and Wang, Wei and Yuan, Zehuan and Han, Chuchu and Ji, Wei and Sun, Shouqian and Wang, Changhu},
+  journal={arXiv preprint arXiv:2202.13123},
+  year={2022}
+}
+```
+## Acknowledgements
+Part of our model is built on [HyperIQA](https://github.com/SSL92/hyperIQA). We thank the authors for sharing their codes. Thanks for the support of (Bytedance.Inc)[https://github.com/bytedance]

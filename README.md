@@ -19,7 +19,7 @@ Place those unzipped data in ./dataset file
 ## Train
 ### 1.Train the FR-teacher
 (1) (optional) Download models for our paper and place it in './model_zoo/'
-   The models for FR-teacher can be downloaded from [Google Cloud]()
+   The models for FR-teacher can be downloaded from [Google Cloud](https://drive.google.com/file/d/1niFBV-ysJeVoaXUPQp-08ovrjS9tPhGW/view?usp=sharing)
    
 (2) Quick start (you can change the options in option_train_DistillationIQA_FR.py)
 ```
@@ -27,7 +27,7 @@ Python train_DistillationIQA_FR.py --self_patch_num 10 --patch_size 224
 ```
 ### 2.Fix pretrained FR-teacher and train the NAR-student
 (1) (optional) Download models for our paper and place it in './model_zoo/'
-   The models for FR-teacher and NAR-student can be downloaded from [Google Cloud]()
+   The models for FR-teacher and NAR-student can be downloaded from [Google Cloud](https://drive.google.com/file/d/107TI1pa0TDxs3V8tO2KhmhKJmfc9ZOl4/view?usp=sharing)
    
 (2) Quick start (you can change the options in option_train_DistillationIQA.py)
 ```

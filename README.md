@@ -71,4 +71,4 @@ If you find the code helpful in your resarch or work, please cite the following 
 }
 ```
 ## Acknowledgements
-Part of our model is built on [HyperIQA](https://github.com/SSL92/hyperIQA). We thank the authors for sharing their codes. Also thanks for the support of [Bytedance.Inc](https://github.com/bytedance)
+Part of our code is built on [HyperIQA](https://github.com/SSL92/hyperIQA). We thank the authors for sharing their codes. Also thanks for the support of [Bytedance.Inc](https://github.com/bytedance)
